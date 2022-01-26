@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Min första sajt</title>
     <link rel="stylesheet" href="style.css">
-    
+    <script>
+        function setNewText(){
+            var elem = document.getElementById('hoppelementet')
+            elem.innerText = "Banan"
+        }
+    </script>
 </head>
 <body>
-    <h1>Test</h1>
+    <h1 onclick="setNewText()">Klicka här</h1>
     <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsam dolore error at debitis. Cupiditate id excepturi quidem aperiam reprehenderit velit nihil, quo repudiandae dicta quia possimus animi hic, distinctio, architecto quos et impedit ut dolorum maxime molestias rem! Ea eaque perspiciatis sequi eius soluta repellendus impedit et placeat omnis. Possimus, odit. Aliquam eius praesentium modi illum est eum vero porro at, dolorem sed, adipisci odit maxime qui repellendus perspiciatis asperiores totam labore voluptate aperiam cumque quod atque quis illo? Ut hic adipisci ratione. Minus beatae ad esse in doloremque fuga fugiat ratione hic, accusantium, nemo ut inventore iure eos!
     </p>
@@ -22,6 +27,6 @@
     <p class="snyggelement">Hej</p>
     <input type="submit" value="Klicka på mig">
     ---1000 rwader
-    <p class="snyggelement">Hopp</p>
+    <p class="snyggelement" id="hoppelementet">Hopp</p>
 </body>
 </html>
